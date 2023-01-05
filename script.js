@@ -1,7 +1,7 @@
 //[STEP 0]: Make sure our document is A-OK
 $(document).ready(function () {
   //what kind of interface we want at the start 
-  const APIKEY = "61d7efdeccd0211b3208982c";
+  const APIKEY = "63b643e1969f06502871a9f0";
   getContacts();
   $("#update-contact-container").hide();
   $("#add-update-msg").hide();
@@ -32,7 +32,7 @@ $(document).ready(function () {
     let settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://idp10-9ab1.restdb.io/rest/contact",
+      "url": "https://idp01-e43b.restdb.io/rest/contact",
       "method": "POST", //[cher] we will use post to send info
       "headers": {
         "content-type": "application/json",
@@ -74,7 +74,7 @@ $(document).ready(function () {
     let settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://idp10-9ab1.restdb.io/rest/contact",
+      "url": "https://idp01-e43b.restdb.io/rest/contact",
       "method": "GET", //[cher] we will use GET to retrieve info
       "headers": {
         "content-type": "application/json",
@@ -189,7 +189,7 @@ $(document).ready(function () {
     var settings = {
       "async": true,
       "crossDomain": true,
-      "url": `https://idp10-9ab1.restdb.io/rest/contact/${id}`,
+      "url": `https://idp01-e43b.restdb.io/rest/contact/${id}`,
       //update based on the ID
       "method": "PUT",
       "headers": {
@@ -219,7 +219,7 @@ $(document).ready(function () {
     var settings = {
       "async": true,
       "crossDomain": true,
-      "url": `https://idp10-9ab1.restdb.io/rest/contact/${id}`,
+      "url": `https://idp01-e43b.restdb.io/rest/contact/${id}`,
       "method": "DELETE",
       "headers": {
         "content-type": "application/json",
